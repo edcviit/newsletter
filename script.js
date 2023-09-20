@@ -10,29 +10,6 @@
 //   const opacity = 1 - scrollPos / (hero.offsetHeight / 2);
 //   hero.style.opacity = opacity < 0 ? 0 : opacity;
 // });
-const shareButton = document.querySelector(".share-button");
-const shareDialog = document.querySelector(".share-dialog");
-const closeButton = document.querySelector(".close-button");
-
-shareButton.addEventListener("click", (event) => {
-  shareDialog.classList.add("is-open");
-});
-
-closeButton.addEventListener("click", (event) => {
-  shareDialog.classList.remove("is-open");
-});
-gsap.to(".hero-content", {
-  y: -50,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: "body",
-    scroller: "html",
-    // markers:true,
-    start: "center 45%",
-    end: "bottom 70%",
-    scrub: 1,
-  },
-});
 
 var tl = gsap.timeline();
 
@@ -40,6 +17,31 @@ tl.from(".nav", {
   y: -100,
   duration: 1,
   opacity: 0,
+});
+
+gsap.to(".hero-content", {
+  opacity: 0,
+  y: -70,
+  scrollTrigger: {
+    trigger: "#main",
+    scroller: "body",
+    // markers:true,
+    start: "top -10%",
+    end: "top -20%",
+    scrub: 1,
+  },
+});
+gsap.to(".hero", {
+  background:
+    "url('https://images.pexels.com/photos/1428169/pexels-photo-1428169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center",
+  scrollTrigger: {
+    trigger: "#main",
+    scroller: "body",
+    // markers:true,
+    start: "top -85%",
+    end: "top -95%",
+    scrub: 0.1,
+  },
 });
 
 // tl.from(".hero-content", {
