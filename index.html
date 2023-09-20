@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>EDC | Newsletter</title>
 </head>
 
 <body>
-
     <div id="main">
         <div class="reading-indicator"></div>
         <div class="reading-indicator-bg"></div>
@@ -23,69 +22,134 @@
         </div>
 
         <div class="hero">
-            <div class="hero-content">
+            <div class="hero-content" id="scrollDiv">
                 <div class="mid">
                     <h1>Colours.</h1>
-                    <p>Unlocking the Power of Color Psychology in Design and Branding</p>
+                    <p>
+                        Unlocking the Power of Color Psychology in Design and Branding
+                    </p>
                 </div>
                 <div class="bottom">
-                    <li><svg fill="#ffffff" height="35px" width="35px" version="1.1" id="Capa_1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="-47.17 -47.17 566.04 566.04" xml:space="preserve" stroke="#ffffff"
-                            stroke-width="0.004717010000000001" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
-                                stroke="#CCCCCC" stroke-width="9.43402"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <g>
-                                    <path
-                                        d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3 C444.801,187.101,434.001,213.101,414.401,232.701z">
+                    <div class="like" id="click-icon">
+                        <li>
+                            <svg fill="#ffffff" height="35px" width="35px" version="1.1" id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="-47.17 -47.17 566.04 566.04" xml:space="preserve" stroke="#ffffff"
+                                stroke-width="0.004717010000000001" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#CCCCCC" stroke-width="9.43402"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                        <path
+                                            d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3 C444.801,187.101,434.001,213.101,414.401,232.701z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </li>
+                        
+                        <p class="hidden-text liked" id="clicked-text">Liked</p>
+                    </div>
+                    <svg id="liked-by-user" fill="#ffffff" width="64px" height="64px" viewBox="0 0 1920 1920"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M1771.731 291.037C1675.709 193.659 1547.944 140 1411.818 140h-.113c-136.125 0-263.777 53.66-359.573 150.924-37.618 38.07-68.571 80.997-92.294 127.426-23.61-46.429-54.563-89.356-92.068-127.313C771.86 193.659 644.208 140 507.97 140h-.113c-136.012 0-263.777 53.66-359.8 151.037-197.691 200.629-197.691 527.103 1.695 729.088l810.086 760.154 811.893-761.736c197.692-200.403 197.692-526.877 0-727.506"
+                                fill-rule="evenodd"></path>
+                        </g>
+                    </svg>
+                    <div class="copy" onclick="copy()" id="copy">
+                        <li class="share" id="click-icon2">
+                            <svg width="67px" height="67px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
+                                fill="#ffffff">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path fill="#ffffff"
+                                        d="M768 832a128 128 0 0 1-128 128H192A128 128 0 0 1 64 832V384a128 128 0 0 1 128-128v64a64 64 0 0 0-64 64v448a64 64 0 0 0 64 64h448a64 64 0 0 0 64-64h64z">
+                                    </path>
+                                    <path fill="#ffffff"
+                                        d="M384 128a64 64 0 0 0-64 64v448a64 64 0 0 0 64 64h448a64 64 0 0 0 64-64V192a64 64 0 0 0-64-64H384zm0-64h448a128 128 0 0 1 128 128v448a128 128 0 0 1-128 128H384a128 128 0 0 1-128-128V192A128 128 0 0 1 384 64z">
                                     </path>
                                 </g>
-                            </g>
-                        </svg></li>
-                    <li class="share"><svg width="67px" height="67px" viewBox="0 0 1024 1024"
-                            xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path fill="#ffffff"
-                                    d="M768 832a128 128 0 0 1-128 128H192A128 128 0 0 1 64 832V384a128 128 0 0 1 128-128v64a64 64 0 0 0-64 64v448a64 64 0 0 0 64 64h448a64 64 0 0 0 64-64h64z">
-                                </path>
-                                <path fill="#ffffff"
-                                    d="M384 128a64 64 0 0 0-64 64v448a64 64 0 0 0 64 64h448a64 64 0 0 0 64-64V192a64 64 0 0 0-64-64H384zm0-64h448a128 128 0 0 1 128 128v448a128 128 0 0 1-128 128H384a128 128 0 0 1-128-128V192A128 128 0 0 1 384 64z">
-                                </path>
-                            </g>
-                        </svg></li>
-                    <li><img src="./assets/x.png" height=27 alt=""></li>
+                            </svg>
+                            
+                        </li>
+                        <p class="hidden-text copied" id="clicked-text2">Link Copied</p>
+                    </div>
+                    <div>
+                        <a
+                            href="https://twitter.com/intent/tweet?text=Check%20out%20this%20amazing%20article%20by%20%40edcviit%20%20edcviit.github.io%2Fnewsletter">
+                            <li><img src="./assets/x.png" height="26" alt="" /></li>
+                            <p class="hidden-text">Hello World</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <img class="img2 background"
             src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-            alt="">
-        <div class="page2-content foreground">
-
-            Colors play a significant role in our lives, impacting our emotions, perceptions, and even
-            decision-making processes.
-            They are not merely visual elements but powerful tools of communication that convey meaning and
-            evoke
-            feelings. From the
-            soothing blues of a tranquil sea to the fiery reds of a blazing sunset, colors have the ability to
-            influence our moods,
-            trigger memories, and symbolize cultural and societal values.
+            alt="" />
+        <div class="page2-content">
+            Colors play a significant role in our lives, impacting our emotions,
+            perceptions, and even decision-making processes. They are not merely
+            visual elements but powerful tools of communication that convey meaning
+            and evoke feelings. From the soothing blues of a tranquil sea to the
+            fiery reds of a blazing sunset, colors have the ability to influence our
+            moods, trigger memories, and symbolize cultural and societal values.
         </div>
-        <div style="height: 100vh;"></div>
-
+        <div class="page3">
+            <img src="https://images.unsplash.com/photo-1602028042623-98df4dbbf08e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80"
+                alt="" />
+            <div class="page3-content">
+                Nature bursts with a kaleidoscope of colors that paint the world in breathtaking hues. From the fiery
+                reds of autumn
+                leaves to the vibrant blues of a pristine sky, the natural world offers a mesmerizing palette that
+                captivates the
+                senses. Flowers bloom in a riot of colors, from the delicate pinks of cherry blossoms to the bold
+                yellows of sunflowers,
+                while tropical rainforests reveal a symphony of greens and exotic shades. The iridescent wings of
+                butterflies, the
+                plumage of tropical birds, and the rich tapestry of coral reefs beneath the sea's surface showcase
+                nature's exquisite
+                artistry. These colors not only delight our eyes but also evoke a sense of wonder and connection to the
+                vibrant tapestry
+                of life that surrounds us.
+            </div>
+        </div>
+        <div class="page4">
+            <img src="https://plus.unsplash.com/premium_photo-1685082778248-d478f0b86512?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
+                alt="" />
+            <div class="page4-content">
+                In design and art, color is a fundamental element that can make or break a composition. Whether it's
+                choosing a color
+                palette for a website, creating a striking painting, or designing an eye-catching advertisement, color
+                selection is a
+                critical creative decision. Color harmonies, such as complementary, analogous, and triadic color
+                schemes, help artists
+                and designers achieve balance and visual appeal in their work. The use of colors can evoke different
+                emotions, direct
+                attention, and guide the viewer's experience, making it an essential aspect of the creative process in
+                visual arts and
+                design disciplines.
+            </div>
+        </div>
     </div>
+    https://twitter.com/intent/tweet?text=Check%20out%20this%20amazing%20article%20by%20%40edcviit%20%20edcviit.github.io%2Fnewsletter%2F
+    <!-- <button onclick="copy()" id="copy">Copy</button> -->
+    <input style="margin: -100%" id="copy-link" value="edcviit.github.io/newsletter">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
         integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./script.js">// Function to check if the hero section is in the viewport
-
+    <script src="./script.js"></script>
+    <script>
     </script>
 </body>
 

@@ -1,50 +1,50 @@
-// JavaScript code
-// const hero = document.querySelector(".hero-content");
-// const scrollingSection = document.querySelector(".scrolling-section");
+const scrollDiv = document.getElementById("scrollDiv");
+let scrolled = false;
 
-// // Add a scroll event listener
-// window.addEventListener("scroll", () => {
-//   const scrollPos = window.scrollY || document.documentElement.scrollTop;
-
-//   // Calculate the opacity based on scroll position
-//   const opacity = 1 - scrollPos / (hero.offsetHeight / 2);
-//   hero.style.opacity = opacity < 0 ? 0 : opacity;
-// });
-
-var tl = gsap.timeline();
-
-tl.from(".nav", {
-  y: -100,
-  duration: 1,
-  opacity: 0,
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50 && !scrolled) {
+    scrollDiv.style.opacity = 0;
+    scrolled = true;
+    console.log("ello");
+  } else if (window.scrollY <= 50 && scrolled) {
+    scrollDiv.style.opacity = 1;
+    scrolled = false;
+  }
 });
 
-gsap.to(".hero-content", {
-  opacity: 0,
-  y: -70,
-  scrollTrigger: {
-    trigger: "#main",
-    scroller: "body",
-    // markers:true,
-    start: "top -10%",
-    end: "top -20%",
-    scrub: 1,
-  },
-});
-gsap.to(".hero", {
-  background:
-    "url('https://images.pexels.com/photos/1428169/pexels-photo-1428169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center",
-  scrollTrigger: {
-    trigger: "#main",
-    scroller: "body",
-    // markers:true,
-    start: "top -85%",
-    end: "top -95%",
-    scrub: 0.1,
-  },
+const icon = document.getElementById("click-icon");
+const text = document.getElementById("clicked-text");
+const iconn = document.getElementById("liked-by-user");
+
+icon.addEventListener("click", () => {
+  text.style.fontSize = "16px";
+  icon.style.display = "none";
+  iconn.style.display = "block";
+  localStorage.setItem("liked", "yes");
+  // Set a timeout to hide the text after 2 seconds (2000 milliseconds)
+  setTimeout(() => {
+    text.style.fontSize = 0;
+  }, 2000);
 });
 
-// tl.from(".hero-content", {
-//   opacity: 0,
-//   duration: 1,
-// });
+const icon2 = document.getElementById("click-icon2");
+const text2 = document.getElementById("clicked-text2");
+
+icon2.addEventListener("click", () => {
+  text2.style.fontSize = "16px";
+
+  setTimeout(() => {
+    text2.style.fontSize = 0;
+  }, 2000);
+});
+function copy() {
+  var copyText = document.querySelector("#copy-link");
+  copyText.select();
+  document.execCommand("copy");
+}
+document.querySelector("#copy").addEventListener("click", copy);
+
+if (localStorage.getItem("liked")) {
+  icon.style.display = "none";
+  iconn.style.display = "block";
+}
