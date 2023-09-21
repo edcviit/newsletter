@@ -30,18 +30,26 @@ icon.addEventListener("click", () => {
 const icon2 = document.getElementById("click-icon2");
 const text2 = document.getElementById("clicked-text2");
 
-icon2.addEventListener("click", () => {
-  text2.style.fontSize = "16px";
 
-  setTimeout(() => {
-    text2.style.fontSize = 0;
-  }, 2000);
-});
 function copy() {
-  var copyText = document.querySelector("#copy-link");
-  copyText.select();
-  document.execCommand("copy");
-  icon2.click();
+  // var copyText = document.querySelector("#copy-link");
+  // copyText.select();
+  // document.execCommand("copy");
+  // icon2.click();
+
+  navigator.clipboard.writeText("stuff to write").then(
+    function () {
+      text2.style.fontSize = "16px";
+      // console.log("Copied to clipboard successfully!");
+      setTimeout(() => {
+        text2.style.fontSize = 0;
+      }, 2000);
+    },
+    function () {
+      console.error("Unable to write to clipboard. :-(");
+    }
+  );
+
 }
 document.querySelector("#copy").addEventListener("click", copy);
 
