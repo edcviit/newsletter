@@ -41,6 +41,7 @@ function copy() {
   var copyText = document.querySelector("#copy-link");
   copyText.select();
   document.execCommand("copy");
+  icon2.click();
 }
 document.querySelector("#copy").addEventListener("click", copy);
 

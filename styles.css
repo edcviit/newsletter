@@ -63,6 +63,7 @@ svg {
   display: flex;
   align-items: center;
   position: fixed;
+  top:0;
   justify-content: space-between;
   z-index: 99;
   padding: 0 5%;
@@ -97,12 +98,12 @@ svg {
   bottom: 35%;
   left:27%;
 } */
-.like , .copy{
+.like,
+.copy {
   display: flex;
   flex-direction: column;
-
 }
-#liked-by-user{
+#liked-by-user {
   display: none;
   /* position: absolute; */
   margin-bottom: 16px;
@@ -249,4 +250,18 @@ svg {
   box-sizing: content-box;
   padding: 2rem;
 }
-/* Style for the scrolling section */
+
+/* for screens other than mobiles */
+@media screen and (min-width: 700px) {
+  .nav {
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+  .nav img{
+    height: 3.4rem;
+  }
+  .page2-content, .page3-content, .page4-content{
+    font-size: 1.5rem;
+    padding:2rem 14rem;
+  }
+}
