@@ -30,7 +30,7 @@ svg {
 #main {
   /* height: 100%; */
   width: 100%;
-  background-color: #fff;
+  background-color: #fff4db;
 }
 @keyframes growReading {
   to {
@@ -67,7 +67,7 @@ svg {
 .nav {
   height: 4rem;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 249, 234);
   display: flex;
   align-items: center;
   position: fixed;
@@ -208,7 +208,7 @@ p {
 }
 
 .page3 {
-  height: 100vh;
+  height: 138vh;
   z-index: 1;
 }
 .page3 img {
