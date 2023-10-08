@@ -47,6 +47,9 @@ svg {
   animation-timeline: scroll(root);
   z-index: 101;
 }
+.hero-content .mid p{
+  margin-top: 1rem;
+}
 .reading-indicator-bg {
   position: fixed;
   bottom: 0;
@@ -109,7 +112,7 @@ svg {
   margin-bottom: 16px;
 }
 .hero {
-  background: url("https://images.unsplash.com/photo-1536924940846-227afb31e2a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2066&q=80")
+  background: url("./assets/cover1.svg")
     no-repeat center;
   background-size: cover;
 
