@@ -208,7 +208,7 @@ p {
 }
 
 .page3 {
-  height: 138vh;
+  /* height: 130vh; */
   z-index: 1;
 }
 .page3 img {
@@ -241,7 +241,9 @@ p {
   z-index: 1;
 }
 .page5 {
+  background-color: #fff;
   height: 30vh;
+  position: relative;;
   z-index: 1;
 }
 .page4 img {
