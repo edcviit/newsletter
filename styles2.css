@@ -258,7 +258,7 @@ p {
   z-index: 1;
 }
 .page4 img {
-  height: 45vh;
+  /* height: 45vh; */
   /* width: 45h; */
   /* margin: 1rem; */
   width: 100%;
