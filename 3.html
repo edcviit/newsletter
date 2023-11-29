@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles3.css" />
+    <title>EDC | Newsletter</title>
+    <link rel="icon" type="image/x-icon" href="./assets/EDC-icon.ico">
+</head>
+
+<body>
+    <input style="margin: -100%" id="copy-link" value="edcviit.github.io/newsletter">
+    <div id="main">
+        <div class="reading-indicator"></div>
+        <div class="reading-indicator-bg"></div>
+        <div class="nav">
+            <div class="logo-name">
+                <img src="./assets/logoNewsletter.svg" alt="VIIT Logo" />
+            </div>
+            <div class="letter-name">
+                <img src="./assets/newsName.svg" alt="Letter logo" />
+            </div>
+            <div class="logo-name">
+                <img src="./assets/EDC-icon.webp" alt="EDC Logo" />
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="hero-content" id="scrollDiv">
+                <div class="mid">
+                    <h2>Oxyrich in Marketing</h2>
+                    <div class="subtitle">
+                        “People don’t buy for logical reasons. They buy for emotional reasons.” 
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="like" id="click-icon">
+                        <li>
+                            <svg fill="#ffffff" height="35px" width="35px" version="1.1" id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="-47.17 -47.17 566.04 566.04" xml:space="preserve" stroke="#ffffff"
+                                stroke-width="0.004717010000000001" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#CCCCCC" stroke-width="9.43402"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                        <path
+                                            d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3 C444.801,187.101,434.001,213.101,414.401,232.701z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </li>
+
+                        <p class="hidden-text liked" id="clicked-text">Liked</p>
+                    </div>
+                    <svg id="liked-by-user" fill="#ffffff" width="64px" height="64px" viewBox="0 0 1920 1920"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M1771.731 291.037C1675.709 193.659 1547.944 140 1411.818 140h-.113c-136.125 0-263.777 53.66-359.573 150.924-37.618 38.07-68.571 80.997-92.294 127.426-23.61-46.429-54.563-89.356-92.068-127.313C771.86 193.659 644.208 140 507.97 140h-.113c-136.012 0-263.777 53.66-359.8 151.037-197.691 200.629-197.691 527.103 1.695 729.088l810.086 760.154 811.893-761.736c197.692-200.403 197.692-526.877 0-727.506"
+                                fill-rule="evenodd"></path>
+                        </g>
+                    </svg>
+                    <div class="copy" onclick="copy()" id="copy">
+                        <li class="share" id="click-icon2">
+                            <svg width="67px" height="67px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
+                                fill="#ffffff">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path fill="#ffffff"
+                                        d="M768 832a128 128 0 0 1-128 128H192A128 128 0 0 1 64 832V384a128 128 0 0 1 128-128v64a64 64 0 0 0-64 64v448a64 64 0 0 0 64 64h448a64 64 0 0 0 64-64h64z">
+                                    </path>
+                                    <path fill="#ffffff"
+                                        d="M384 128a64 64 0 0 0-64 64v448a64 64 0 0 0 64 64h448a64 64 0 0 0 64-64V192a64 64 0 0 0-64-64H384zm0-64h448a128 128 0 0 1 128 128v448a128 128 0 0 1-128 128H384a128 128 0 0 1-128-128V192A128 128 0 0 1 384 64z">
+                                    </path>
+                                </g>
+                            </svg>
+
+                        </li>
+                        <p class="hidden-text copied" id="clicked-text2">Link Copied</p>
+                    </div>
+                    <div>
+                        <a
+                            href="https://twitter.com/intent/tweet?text=Check%20out%20this%20amazing%20article%20by%20%40edcviit%20%20edcviit.github.io%2Fnewsletter">
+                            <li><img src="./assets/x.png" height="26" alt="" /></li>
+                            <p class="hidden-text">Hello World</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img class="img2 background" src="./assets/newsletter3/Oxyrich_2.webp" alt="" />
+        </div>
+        <div class="page2-content">
+            <h3>
+                <i>INTRODUCTION </i>
+            </h3>
+            <br>
+            <br>
+            <p>In 2002, Manikchand Oxyrich began near Pune, blossoming into a premium drinking water brand. With plants in Hyderabad, Bangalore, Ahmedabad, and Haridwar, their focus on quality extends to supplying essentials nationwide. Oxyrich revolutionizes healthy hydration across India.
+            </p>
+            <br>
+        </div>
+
+        <div class="page3">
+            <!-- <img src="./assets/newsletter2/images_(6)_upscaled.jpeg.webp" alt="" /> -->
+            <div class="page3-content">
+                <h3>
+                    <i>
+                        OXYRICH : A BRAND
+                    </i>
+                </h3>
+                <br>
+                <br>
+                <p>
+                    Oxyrich became a brand by tapping into the youth's thirst for success with the rallying cry “Pyaas Jagao”. Their outdoor campaign redefined 'thirst' as the drive to achieve, setting an industry trend seen in Limca's 'Pyaas Badhao.' Claiming to be the only Indian packaged water with 300% more oxygen, Oxyrich's patented technology makes it a market front-runner. Targeting a youth demographic into sports and fitness, Oxyrich's design exudes vitality, enhancing its appeal
+                </p>
+                <br>
+                
+            </div>
+        </div>
+        <div class="page4 ">
+            <img src="./assets/newsletter3/Oxyrich_3.webp" alt="">
+            <div class="page4-content">
+                <h3>
+                    <i>
+                        STRATEGIC REBRANDING AND ENHANCED AUTHENTICITY
+                    </i>
+                </h3>
+                <br>
+                <br>
+                <p>
+                    In response to the escalating number of counterfeit products flooding the market, Oxyrich took a pivotal step by initiating a rebranding strategy. The company identified the misuse of its iconic blue label by approximately 500 local units and promptly took decisive action to safeguard customer trust.
+                <p><br>
+                    In a bold move on September 5, 2023, Oxyrich transitioned from its traditional blue label to a vibrant red and white design, unveiling a novel logo and an aesthetically pleasing label. This transformation aims to prevent malpractice, eliminate label duplication, and ensure easy recognition of genuine Oxyrich products. Beyond safeguarding the brand's integrity, it serves as a deterrent to counterfeit enterprises. 
+                </p>
+                <p><br>
+                    Oxyrich asserts its commitment to legal action against replication attempts. The rebranding event, hosted at the JW Marriott Hotel in Pune, marked a strategic milestone with the presence of distributors, franchisees, and entrepreneurs nationwide.
+                </p>
+
+                </p>
+                <br>
+            </div>
+        </div>
+        <div class="page4 ">
+            <img src="./assets/newsletter3/Oxyrich_7.webp" alt="">
+            <div class="page4-content">
+                <h3>
+                    <i>
+                        EMOTION AND MARKETING
+                    </i>
+                </h3>
+                <p><br>
+                    The Manikchand Oxyrich Group seized the opportunity presented by Pune's grand Ganesh Utsav, strategically sponsoring select Ganesh mandals to engage with the vibrant celebration.
+                </p>
+                <p><br>
+                    Notably, the Shrimant Bhausaheb Rangari Ganapati and other trusts facilitated the placement of Oxyrich banners along the roadsides in Pune's old city area. Capitalizing on the festive fervor, Oxyrich leveraged social media influencers who creatively integrated the brand into memes, playfully highlighting the prevalence of Oxyrich banners in the city. Furthermore, Instagram reels showcased Oxyrich-themed decorations at the Akhil Mandai Mandal, fostering an emotional connection with the local populace.
+                </p>
+                <p><br>
+                    During the bustling 10 days of Ganesh Utsav, Manikchand Oxyrich strategically seized the essential need for water, positioning its brand prominently. In the midst of devotees' queues, Oxyrich dominated by ensuring its visibility through filled bottles with vendors and even empty ones in dustbins. This on-ground promotion, amid a digital era, showcased the brand's commitment to a tangible and widespread presence. The goal was to create the illusion of popularity, making Oxyrich the default refreshment option during the festivities.
+                </p>
+
+                </p>
+                <br>
+            </div>
+        </div>
+
+        <div class="page5 ">
+            <div class="image">
+                <img src="./assets/newsletter3/Oxyrich_1.webp" alt=""  />
+            </div>
+            <div class="page5-content">
+                <h3>
+                    <i>
+                        CONCLUSION
+                    </i>
+                </h3>
+                <br>
+                <br>
+                This localized marketing model, though seemingly modest, serves as a microcosm for understanding the efficacy of larger-scale marketing strategies. Manikchand Oxyrich's astute approach during Ganesh Utsav exemplifies how strategic brand penetration can efficiently shape consumer preferences and drive market prominence.
+                </p>
+
+                </p>
+                <br>
+            </div>
+
+
+            <div class="page6">
+                <hr role="tournament6">
+                <div class="page5-content">
+                    <em> Yuvraj Sankilwar,
+                         Harshada Yelpale, 
+                         Sujal Tagalpallewar, 
+                         Atharva Wadhe
+                        <br>
+                        Other Credits: Rohan Vaidya
+                    </em>
+                </div>
+            </div>
+        </div> <!-- <button onclick="copy()" id="copy">Copy</button> -->
+        <script src="./script.js"></script>
+        <script>
+        </script>
+</body>
+
+</html>
