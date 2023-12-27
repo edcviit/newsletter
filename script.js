@@ -30,12 +30,12 @@ icon.addEventListener("click", () => {
 const icon2 = document.getElementById("click-icon2");
 const text2 = document.getElementById("clicked-text2");
 
-
 function copy() {
   // var copyText = document.querySelector("#copy-link");
   // copyText.select();
   // document.execCommand("copy");
   // icon2.click();
+  navigator.share("Hello world");
 
   navigator.clipboard.writeText("edcviit.github.io/newsletter/").then(
     function () {
@@ -49,7 +49,6 @@ function copy() {
       console.error("Unable to write to clipboard. :-(");
     }
   );
-
 }
 document.querySelector("#copy").addEventListener("click", copy);
 
