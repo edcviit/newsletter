@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="likses.css" />
+    <title>EDC | Newsletter</title>
+    <link rel="icon" type="image/x-icon" href="./assets/EDC-icon.ico">
+    <style>
+        /* Add the styles for the like button and count here */
+        #likeButton {
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #likeCount {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <input style="margin: -100%" id="copy-link" value="edcviit.github.io/newsletter">
+    <div id="main">
+        <!-- ... (your existing code) ... -->
+        <div class="reading-indicator"></div>
+        <div class="reading-indicator-bg"></div>
+        <div class="nav">
+            <div class="logo-name">
+                <img src="./assets/logoNewsletter.svg" alt="VIIT Logo" />
+            </div>
+            <div class="letter-name">
+                <img src="./assets/newsName.svg" alt="Letter logo" />
+            </div>
+            <div class="logo-name">
+                <img src="./assets/EDC-icon.webp" alt="EDC Logo" />
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-content" id="scrollDiv">
+                <div class="mid">
+                    <h2>Oxyrich in Marketing</h2>
+                    <div class="subtitle">
+                        “People don’t buy for logical reasons. They buy for emotional reasons.” 
+                    </div>
+                </div>
+
+            <div class="bottom">
+                <!-- Add the like button and count display here -->
+                <div id="likeButton" onclick="incrementLikes()">
+                    <svg fill="#ffffff" height="35px" width="35px" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="-47.17 -47.17 566.04 566.04" xml:space="preserve" stroke="#ffffff"
+                        stroke-width="0.004717010000000001" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                        <!-- ... (your existing like button SVG code) ... -->
+                    </svg>
+                </div>
+
+                <p class="hidden-text liked" id="clicked-text">Liked</p>
+                <div id="likeCount">0 Likes</div>
+            </div>
+
+            <!-- ... (your existing code) ... -->
+        </div>
+
+        <!-- ... (the rest of your existing code) ... -->
+
+        <script src="./script.js"></script>
+        <script>
+            // Add the like functionality JavaScript code here
+            function incrementLikes() {
+                if (localStorage.getItem('liked')) {
+                    return; // User already liked, exit
+                }
+
+                if (localStorage.getItem('likeCount')) {
+                    let count = parseInt(localStorage.getItem('likeCount'), 10) + 1;
+                    localStorage.setItem('likeCount', count);
+                } else {
+                    localStorage.setItem('likeCount', 1);
+                }
+
+                updateLikeCount();
+                localStorage.setItem('liked', 'yes');
+            }
+
+            function updateLikeCount() {
+                const likeCountElement = document.getElementById('likeCount');
+                const count = parseInt(localStorage.getItem('likeCount'), 10) || 0;
+                likeCountElement.textContent = count + (count === 1 ? ' Like' : ' Likes');
+            }
+
+            window.onload = updateLikeCount;
+        </script>
+</body>
+
+</html>
